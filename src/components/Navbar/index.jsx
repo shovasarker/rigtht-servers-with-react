@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { NAV_SUB_LINK } from '../../data'
-import logo from '../../images/logo.png'
 import LinkDropdown from '../LinkDropdown'
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,7 +14,11 @@ const Navbar = () => {
     <nav className='relative container px-8 lg:px-16 xl:px-32 flex justify-between items-center py-5'>
       {/* <!-- logo of the site --> */}
       <div className='w-40 lg:w-52 logo-wrapper'>
-        <img src={logo} alt='Right Servers Logo' className='w-full' />
+        <img
+          src='./images/logo.png'
+          alt='Right Servers Logo'
+          className='w-full'
+        />
       </div>
       {/* <!-- logo of the site --> */}
 

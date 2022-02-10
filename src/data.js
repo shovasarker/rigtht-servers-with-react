@@ -30,8 +30,23 @@ export const BANNER_SECTION_DATA = {
 export const OFFER_PACKAGE_DATA = [
   {
     id: 1,
-    popular: false,
+    isPopular: false,
     packageTitle: 'Right Bare 1',
+    prevPrice: 85,
+    currPrice: 69,
+    discountAmount: '30%',
+    offerIncludes: [
+      '1 x intel Xeon E3 1240',
+      '32 GB RAM',
+      '250 GB SSD Disks',
+      '4 Cores 3.40 GHz',
+      '10 Gbe Ethernet',
+    ],
+  },
+  {
+    id: 2,
+    isPopular: true,
+    packageTitle: 'Right Bare 2',
     prevPrice: 85,
     currPrice: 49,
     discountAmount: '50%',
@@ -44,24 +59,9 @@ export const OFFER_PACKAGE_DATA = [
     ],
   },
   {
-    id: 2,
-    popular: true,
-    packageTitle: 'Right Bare 1',
-    prevPrice: 85,
-    currPrice: 59,
-    discountAmount: '40%',
-    offerIncludes: [
-      '1 x intel Xeon E3 1240',
-      '32 GB RAM',
-      '250 GB SSD Disks',
-      '4 Cores 3.40 GHz',
-      '10 Gbe Ethernet',
-    ],
-  },
-  {
     id: 3,
-    popular: false,
-    packageTitle: 'Right Bare 1',
+    isPopular: false,
+    packageTitle: 'Right Bare 3',
     prevPrice: 85,
     currPrice: 69,
     discountAmount: '30%',
@@ -90,42 +90,42 @@ export const PRODUCT_FEATURE_DATA = {
   items: [
     {
       id: 1,
-      imgUrl: '../images/protect.png',
+      imgUrl: './images/protect.png',
       itemTitle: 'Reliable Data Centers',
       itemDetails:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ut dolores quam!',
     },
     {
       id: 2,
-      imgUrl: '../images/flexible.png',
+      imgUrl: './images/flexible.png',
       itemTitle: 'Flexible and Easy',
       itemDetails:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ut dolores quam!',
     },
     {
       id: 3,
-      imgUrl: '../images/reliable.png',
+      imgUrl: './images/reliable.png',
       itemTitle: 'Tested Reliability',
       itemDetails:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ut dolores quam!',
     },
     {
       id: 4,
-      imgUrl: '../images/network.png',
+      imgUrl: './images/network.png',
       itemTitle: 'Global Network',
       itemDetails:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ut dolores quam!',
     },
     {
       id: 5,
-      imgUrl: '../images/multiple.png',
+      imgUrl: './images/multiple.png',
       itemTitle: 'Multiple Locations',
       itemDetails:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ut dolores quam!',
     },
     {
       id: 6,
-      imgUrl: '../images/support.png',
+      imgUrl: './images/support.png',
       itemTitle: 'All Time Support',
       itemDetails:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ut dolores quam!',

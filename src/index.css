@@ -8,7 +8,7 @@
   ------------------------------*/
 
   .header {
-    background: url('./images/banner-bg.png') no-repeat,
+    background: url('../public/images/banner-bg.png') no-repeat,
       linear-gradient(to right, #02047e, #002abf);
     background-size: 230%, 100%;
     background-position: -450px 224px, center;
@@ -43,6 +43,14 @@
 
   .curr-price {
     @apply before:content-['$'] before:text-title before:absolute before:left-0 before:top-2.5 before:text-lg before:font-bold;
+  }
+
+  .popular {
+    @apply relative;
+  }
+
+  .popular .bookmark {
+    @apply !block;
   }
 
   .triangle {
