@@ -1,13 +1,274 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  /* --------------------------
+   ? Header section styles 
+  ------------------------------*/
+
+  .header {
+    background: url('./images/banner-bg.png') no-repeat,
+      linear-gradient(to right, #02047e, #002abf);
+    background-size: 230%, 100%;
+    background-position: -450px 224px, center;
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0);
+  }
+  .mobile-menu.show {
+    @apply !top-100p;
+  }
+
+  .custom-btn {
+    @apply px-6 py-2.5 rounded-sm border text-tiny text-white font-semibold inline-block;
+  }
+
+  .custom-btn-large {
+    @apply text-base px-5 md:px-7 py-3;
+  }
+
+  .custom-btn-primary {
+    @apply bg-paste hover:bg-transparent hover:text-paste transition-colors border-paste;
+  }
+
+  .custom-btn-outline {
+    @apply bg-transparent border-white hover:bg-white hover:text-paste transition-colors;
+  }
+
+  /* --------------------------
+  ? Offer section styles 
+------------------------------*/
+  .prev-price {
+    @apply after:content-[""] after:bg-title/75 after:w-[32px] after:h-px after:absolute after:top-50p after:-translate-y-50p after:left-0;
+  }
+
+  .curr-price {
+    @apply before:content-['$'] before:text-title before:absolute before:left-0 before:top-2.5 before:text-lg before:font-bold;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #cb4542;
+    border-left: 10px solid transparent;
+    right: 68px;
+  }
+
+  /* --------------------------
+   ? Feature section styles 
+  ------------------------------*/
+
+  .feature-section {
+    clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0);
+  }
+
+  /* --------------------------
+   ? Configuration section styles 
+  ------------------------------*/
+
+  thead tr {
+    @apply bg-btnBlue/10;
+  }
+
+  thead td {
+    @apply py-3 text-title font-semibold text-sm text-center;
+  }
+
+  tbody td {
+    @apply text-center py-5 text-title/80 font-normal text-sm bg-white;
+  }
+
+  tbody tr {
+    @apply border-b border-b-btnBlue/20 bg-white;
+  }
+
+  tbody tr:last-child {
+    @apply border-b-0;
+  }
+
+  /* --------------------------
+  ? Server Testing section styles 
+  ------------------------------*/
+
+  .server-testing-section {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  }
+
+  .item {
+    @apply border-b border-b-btnBlue/50;
+  }
+
+  .item:last-child {
+    @apply border-b-0;
+  }
+
+  /* --------------------------
+  ? Distribution section styles 
+  ------------------------------*/
+
+  .active {
+    @apply !text-btnBlue border-l-4 border-l-btnBlue;
+  }
+
+  /* --------------------------
+  ? Middle section styles 
+  ------------------------------*/
+
+  .prev-price-middle {
+    @apply after:content-[""] after:bg-white/75 after:w-[32px] after:h-[2px] after:absolute after:top-50p after:-translate-y-50p after:left-0;
+  }
+
+  .curr-price-middle {
+    @apply before:content-['$'] before:text-white before:absolute before:left-0 before:top-2.5 before:text-lg before:font-bold;
+  }
+
+  /* --------------------------
+  ? FAQ Section styles
+  ------------------------------*/
+
+  .faq-list-item {
+    @apply relative pl-3.5 mb-3 cursor-pointer before:content-[""] before:absolute before:w-0 before:h-0 before:left-0 before:top-50p before:-translate-y-50p before:border-transparent before:!border-l-title before:border-t-[5px] before:border-r-0 before:border-b-[5px] before:border-l-[5px];
+  }
+
+  .faq-list-item:last-child {
+    @apply mb-0;
+  }
+
+  .faq-list-item.selected {
+    @apply !text-btnBlue underline underline-offset-2 before:!border-l-btnBlue;
+  }
+
+  .accordion.open {
+    @apply pb-5;
+  }
+
+  .accordion.open .accordion-body {
+    @apply !h-fit mt-4  transition-all duration-500;
+  }
+
+  .accordion-btn {
+    @apply relative w-full pr-4 text-left before:content-[""] before:absolute before:top-50p before:-translate-y-50p before:right-0 before:w-3 before:h-[2px] before:bg-title before:rotate-90 before:transition-all before:duration-300 after:content-[""] after:absolute after:top-50p after:-translate-y-50p after:right-0 after:w-3 after:h-[2px] after:bg-title;
+  }
+
+  .accordion.open .accordion-btn {
+    @apply text-btnBlue before:!rotate-0 before:bg-btnBlue before:transition-all before:duration-300 after:bg-btnBlue transition-all;
+  }
+
+  /* *************************************
+   !Media Queries for Responsive Designs 
+   * ****************************************/
+
+  @media (max-width: 360px) {
+    .header {
+      background-position: -410px 290px, center;
+    }
+  }
+
+  /* !Media query for table only */
+  @media (max-width: 767px) {
+    thead,
+    tbody,
+    tr,
+    td {
+      @apply block;
+    }
+
+    thead {
+      @apply absolute -top-310p;
+    }
+
+    /* tbody td {
+      @apply relative text-right before:absolute before:left-5p before:text-sm before:font-semibold before:text-title;
+    } */
+
+    tbody td {
+      @apply flex justify-between px-12 border-b border-b-btnBlue/20 before:text-sm before:font-semibold before:text-title;
+    }
+
+    tbody tr {
+      @apply mb-2 border-b-0 shadow-sm;
+    }
+
+    tbody tr:last-child {
+      @apply mb-0;
+    }
+
+    tbody td:nth-child(1) {
+      @apply before:content-["Package"];
+    }
+    tbody td:nth-child(2) {
+      @apply before:content-["Location"];
+    }
+    tbody td:nth-child(3) {
+      @apply before:content-["Processor"];
+    }
+    tbody td:nth-child(4) {
+      @apply before:content-["Core"];
+    }
+    tbody td:nth-child(5) {
+      @apply before:content-["RAM"];
+    }
+    tbody td:nth-child(6) {
+      @apply before:content-["Storage"];
+    }
+    tbody td:nth-child(7) {
+      @apply before:content-["Bandwidth"];
+    }
+    tbody td:nth-child(8) {
+      @apply before:content-["Price"];
+    }
+    tbody td:nth-child(9) {
+      @apply border-b-0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .header {
+      background-size: 1500px, 100%;
+      background-position: -690px 100px, center;
+    }
+    .feature-section {
+      clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+    }
+
+    .server-testing-section {
+      clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .item:nth-last-child(-n + 2) {
+      @apply border-b-0;
+    }
+
+    .curr-price-middle {
+      @apply before:top-0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .header {
+      background-size: 1400px, 100%;
+      background-position: -220px -100px, center;
+      clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+    }
+    .curr-price-middle {
+      @apply before:top-2.5;
+    }
+  }
+  @media (min-width: 1280px) {
+    .header {
+      background-size: 1578px, 100%;
+      background-position: -150px -120px, center;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .header {
+      background-position: -110px -120px, center;
+    }
+  }
+  @media (min-width: 1600px) {
+    .header {
+      background-size: 1820px, 100%;
+      background-position: -150px -120px, center;
+    }
+  }
 }
