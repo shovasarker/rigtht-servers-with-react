@@ -1,4 +1,5 @@
 import React from 'react'
+import ConfigurationSection from '../ConfigurationSection'
 import FeatureSection from '../FeatureSection'
 import OfferSection from '../OfferSection'
 import ServerSection from '../ServerSection'
@@ -9,6 +10,7 @@ const MainSection = () => {
       <OfferSection />
       <ServerSection />
       <FeatureSection />
+      <ConfigurationSection />
     </main>
   )
 }
