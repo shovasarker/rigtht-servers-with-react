@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CustomRow from '../../components/CustomRow'
 import CustomSelector from '../../components/CustomSelector'
 import FilteringLabel from '../../components/FilteringLabel'
+import SectionHeader from '../../components/SectionHeader'
 import { CONFIGURATION_SECTION_DATA } from '../../data'
 
 const ConfigurationSection = () => {
@@ -11,14 +12,7 @@ const ConfigurationSection = () => {
   const { tableHead, tableBody } = tableDatas
   return (
     <section className='container px-8 lg:px-16 xl:px-32 mb-20'>
-      <h1 className='text-2xl md:text-4xl font-bold text-title mb-5 text-center'>
-        {title}
-      </h1>
-      <div className='text-base text-title font-normal leading-loose text-center mb-16'>
-        {smallDetails.split('<br>').map((item, i) => {
-          return <p key={i}>{item}</p>
-        })}
-      </div>
+      <SectionHeader title={title} smallDetails={smallDetails} isDark />
       {/* <!-- sort selection section start --> */}
       <div className='flex justify-center lg:justify-start items-center flex-wrap gap-y-5 bg-white py-2 px-5 mb-5'>
         {selectorDatas?.map((items, i) => {
