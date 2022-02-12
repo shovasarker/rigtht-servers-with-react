@@ -1,5 +1,6 @@
 import React from 'react'
 import ConfigurationSection from '../ConfigurationSection'
+import FaqSection from '../FaqSection'
 import FeatureSection from '../FeatureSection'
 import MiddleBannerSection from '../MiddleBannerSection'
 import OfferSection from '../OfferSection'
@@ -15,6 +16,7 @@ const MainSection = () => {
       <ConfigurationSection />
       <TestServerSection />
       <MiddleBannerSection />
+      <FaqSection />
     </main>
   )
 }

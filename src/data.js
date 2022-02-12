@@ -315,3 +315,143 @@ export const MIDDLE_BANNER_SECTION_DATA = {
   detailsPart1: 'Our High Performance Bare Metal server offer you high',
   detailsPart2: '1 x intel Xeon E3 1240v6',
 }
+
+export const FAQ_SECTION_DATA = {
+  title: 'Frequently Asked Questions',
+  sideMenuTitle: 'Select Topic',
+  sideMenu: [
+    'Right Servers',
+    'About Bare Metal',
+    'Pricing & Support',
+    'Purchasing Online',
+    'Returns',
+  ],
+  faqData: [
+    [
+      {
+        id: 1,
+        question: 'What is a Server?',
+        answer:
+          'Server Defination: A server refers to a piece of hardware or computer program that provides service to other devices and their users. That device or user is referred to as the client.',
+      },
+      {
+        id: 2,
+        question: 'What is a Blade Server?',
+        answer:
+          'When you think of a server or a data center, you are probably imagining a room full of wires, buzzing hard drives, and flashing lights – but did you know that Lenovo offers servers designed for small businesses and large corporations alike?',
+      },
+      {
+        id: 3,
+        question: 'What is a Rack Server?',
+        answer:
+          'A small business server is a PC at heart. It has a CPU, memory (RAM), storage (hard drives), a power supply, ports, and provisions for connecting to a network.',
+      },
+    ],
+    [
+      {
+        id: 1,
+        question:
+          'What is the difference between dedicated and Bare Metal servers?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+      {
+        id: 2,
+        question: 'How to add failover IP addresses on Bare Metal server?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+      {
+        id: 3,
+        question:
+          'How many network ports are available on the Bare Metal server?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+      {
+        id: 4,
+        question: 'How Can I install a Cloud Bare Metal server?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+      {
+        id: 5,
+        question: 'How do I repair an item?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+    ],
+    [
+      {
+        id: 1,
+        question:
+          "What are the configuration ID's for building bare metal servers using the API?",
+        answer:
+          "Customers can retrieve the available configuration ID's, pricing and SKU details using the Get Data Center Bare Metal Capabilities API.",
+      },
+      {
+        id: 2,
+        question:
+          'How is hardware support and replacement handled for Bare Metal servers?',
+        answer:
+          'Lumen is responsible for all hardware replacement for Bare Metal servers. Physical hardware support for servers is only available during core business hours (M-F 9AM - 5PM) in the time zone of the datacenter.',
+      },
+      {
+        id: 3,
+        question:
+          'What are the security features available for Bare Metal servers?',
+        answer:
+          'Bare Metal servers can be incorporated in the same firewall policies currently available with other Lumen Cloud server types. Some Bare Metal servers are pre-configured with fully encrypted local storage while others are left to the users to configure. Please see additional FAQ on “storage customizations” and "configuring RAID controller" below for details on encryption and server options.',
+      },
+    ],
+    [
+      {
+        id: 1,
+        question:
+          'Do I still get billed for a Bare Metal server that is turned off?',
+        answer:
+          'Yes, Bare Metal servers are dedicated to you once they have been provisioned and will continue to bill the normal hourly rate regardless of the state of the server. Under certain circumstances, if a server has become unavailable to the point where it has exceeded the SLA for availability, credits may be applicable for the lost server time.',
+      },
+      {
+        id: 2,
+        question: 'Can I use my own licensing for the OS?',
+        answer:
+          'No, the licensing is factored into the cost of the Bare Metal server where applicable and cannot be separated from the service. If you would be interested in using your own OS licensing with Bare Metal servers, please let us know in a feature request.',
+      },
+      {
+        id: 3,
+        question:
+          'How many network ports are available on the Bare Metal server?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+      {
+        id: 4,
+        question: 'How Can I install a Cloud Bare Metal server?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+      {
+        id: 5,
+        question: 'How do I repair an item?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+    ],
+    [
+      {
+        id: 1,
+        question: 'How do i cancel my subscription?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+      {
+        id: 2,
+        question:
+          'How much return i get if i cancel my subscription halfway through?',
+        answer:
+          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, dolor excepturi. Id dolorem repudiandae excepturi velit expedita natus minima ipsam.',
+      },
+    ],
+  ],
+}
