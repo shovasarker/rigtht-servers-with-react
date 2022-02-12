@@ -306,3 +306,12 @@ export const TEST_SERVER_SECTION_DATA = {
     },
   ],
 }
+
+export const MIDDLE_BANNER_SECTION_DATA = {
+  imgUrl: './images/middle-banner.png',
+  prevPrice: 85,
+  currPrice: 49,
+  title: 'Dedicated Server DX 01',
+  detailsPart1: 'Our High Performance Bare Metal server offer you high',
+  detailsPart2: '1 x intel Xeon E3 1240v6',
+}
