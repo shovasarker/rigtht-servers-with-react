@@ -227,3 +227,82 @@ export const CONFIGURATION_SECTION_DATA = {
     ],
   },
 }
+
+export const TEST_SERVER_SECTION_DATA = {
+  title: 'Server All Around The World',
+  smallDetails:
+    'Our High Performance Bare Metal server offer you high reliability and stability <br> create servers of ultra-powerful machines',
+
+  servers: [
+    {
+      id: 1,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 2,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 3,
+      imgUrl: './images/icons/germany.png',
+      location: 'Berlin, Germany',
+    },
+    {
+      id: 4,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 5,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 6,
+      imgUrl: './images/icons/germany.png',
+      location: 'Berlin, Germany',
+    },
+    {
+      id: 7,
+      imgUrl: './images/icons/germany.png',
+      location: 'Munich, Germany',
+    },
+    {
+      id: 8,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 9,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 10,
+      imgUrl: './images/icons/germany.png',
+      location: 'Berlin, Germany',
+    },
+    {
+      id: 11,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 12,
+      imgUrl: './images/icons/united-states.png',
+      location: 'California, USA',
+    },
+    {
+      id: 13,
+      imgUrl: './images/icons/germany.png',
+      location: 'Berlin, Germany',
+    },
+    {
+      id: 14,
+      imgUrl: './images/icons/germany.png',
+      location: 'Munich, Germany',
+    },
+  ],
+}

@@ -3,6 +3,7 @@ import ConfigurationSection from '../ConfigurationSection'
 import FeatureSection from '../FeatureSection'
 import OfferSection from '../OfferSection'
 import ServerSection from '../ServerSection'
+import TestServerSection from '../TestServerSection'
 
 const MainSection = () => {
   return (
@@ -11,6 +12,7 @@ const MainSection = () => {
       <ServerSection />
       <FeatureSection />
       <ConfigurationSection />
+      <TestServerSection />
     </main>
   )
 }
