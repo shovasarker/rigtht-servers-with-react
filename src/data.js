@@ -455,3 +455,60 @@ export const FAQ_SECTION_DATA = {
     ],
   ],
 }
+
+export const DISTRIBUTION_SECTION_DATA = {
+  title: 'Available Distribution',
+  smallDetails:
+    'Our High Performance Bare Metal server offer you high <br> reliability and stability',
+  sideMenu: ['Operating Systems', '1-Click App'],
+  mainData: [
+    [],
+    [
+      {
+        id: 1,
+        imgUrl: './images/cloudron1.png',
+        text: 'Cloudron',
+      },
+      {
+        id: 2,
+        imgUrl: './images/plexer1.png',
+        text: 'Plexer',
+      },
+      {
+        id: 3,
+        imgUrl: './images/wordpress1.png',
+        text: 'Wordpress',
+      },
+      {
+        id: 4,
+        imgUrl: './images/cloudron2.png',
+        text: 'Cloudron',
+      },
+      {
+        id: 5,
+        imgUrl: './images/plexer2.png',
+        text: 'Plexer',
+      },
+      {
+        id: 6,
+        imgUrl: './images/wordpress2.png',
+        text: 'Wordpress',
+      },
+      {
+        id: 7,
+        imgUrl: './images/cloudron3.png',
+        text: 'Cloudron',
+      },
+      {
+        id: 8,
+        imgUrl: './images/plexer3.png',
+        text: 'Plexer',
+      },
+      {
+        id: 9,
+        imgUrl: './images/wordpress3.png',
+        text: 'Wordpress',
+      },
+    ],
+  ],
+}
