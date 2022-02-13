@@ -462,18 +462,7 @@ export const DISTRIBUTION_SECTION_DATA = {
     'Our High Performance Bare Metal server offer you high <br> reliability and stability',
   sideMenu: ['Operating Systems', '1-Click App'],
   mainData: [
-    [
-      {
-        id: 1,
-        imgUrl: './images/cloudron1.png',
-        text: 'Cloudron',
-      },
-      {
-        id: 2,
-        imgUrl: './images/plexer1.png',
-        text: 'Plexer',
-      },
-    ],
+    [],
     [
       {
         id: 1,
@@ -536,5 +525,16 @@ export const DISTRIBUTION_SECTION_DATA = {
         text: 'Wordpress',
       },
     ],
+  ],
+}
+
+export const CLIENT_SECTION_DATA = {
+  numberOfClients: '30,000',
+  imageUrls: [
+    './images/utosia-logo.png',
+    './images/gold-line-logo.png',
+    './images/circle-logo.png',
+    './images/utosia-logo.png',
+    './images/gold-line-logo.png',
   ],
 }

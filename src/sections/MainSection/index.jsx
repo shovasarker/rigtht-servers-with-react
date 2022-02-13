@@ -1,4 +1,5 @@
 import React from 'react'
+import ClientSection from '../ClientSection'
 import ConfigurationSection from '../ConfigurationSection'
 import DistributionSection from '../DistributionSection'
 import FaqSection from '../FaqSection'
@@ -19,6 +20,7 @@ const MainSection = () => {
       <DistributionSection />
       <MiddleBannerSection />
       <FaqSection />
+      <ClientSection />
     </main>
   )
 }
