@@ -114,7 +114,7 @@
   ------------------------------*/
 
   .active {
-    @apply !text-btnBlue border-l-4 border-l-btnBlue;
+    @apply !text-btnBlue !border-l-btnBlue;
   }
 
   /* --------------------------

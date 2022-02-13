@@ -462,7 +462,18 @@ export const DISTRIBUTION_SECTION_DATA = {
     'Our High Performance Bare Metal server offer you high <br> reliability and stability',
   sideMenu: ['Operating Systems', '1-Click App'],
   mainData: [
-    [],
+    [
+      {
+        id: 1,
+        imgUrl: './images/cloudron1.png',
+        text: 'Cloudron',
+      },
+      {
+        id: 2,
+        imgUrl: './images/plexer1.png',
+        text: 'Plexer',
+      },
+    ],
     [
       {
         id: 1,
@@ -476,36 +487,51 @@ export const DISTRIBUTION_SECTION_DATA = {
       },
       {
         id: 3,
+        imgUrl: './images/strapi1.png',
+        text: 'Starpi',
+      },
+      {
+        id: 4,
         imgUrl: './images/wordpress1.png',
         text: 'Wordpress',
       },
       {
-        id: 4,
+        id: 5,
         imgUrl: './images/cloudron2.png',
         text: 'Cloudron',
       },
       {
-        id: 5,
+        id: 6,
         imgUrl: './images/plexer2.png',
         text: 'Plexer',
       },
       {
-        id: 6,
+        id: 7,
+        imgUrl: './images/starpi2.png',
+        text: 'Starpi',
+      },
+      {
+        id: 8,
         imgUrl: './images/wordpress2.png',
         text: 'Wordpress',
       },
       {
-        id: 7,
+        id: 9,
         imgUrl: './images/cloudron3.png',
         text: 'Cloudron',
       },
       {
-        id: 8,
+        id: 10,
         imgUrl: './images/plexer3.png',
         text: 'Plexer',
       },
       {
-        id: 9,
+        id: 11,
+        imgUrl: './images/starpi3.png',
+        text: 'Starpi',
+      },
+      {
+        id: 12,
         imgUrl: './images/wordpress3.png',
         text: 'Wordpress',
       },
